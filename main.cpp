@@ -12,6 +12,7 @@ int main(){
     cin >> choice;
 
     string order_id;
+    double price, amount, quantity;
     switch (choice){
         case 1:
             api.ViewPositions("BTC", "future");
@@ -22,7 +23,6 @@ int main(){
             api.Get_Order(order_id);
             break;
         case 3:
-            double price, amount;
             cout << "Enter order id: ";
             cin >> order_id;
             cout << "Enter new price: ";
@@ -39,7 +39,6 @@ int main(){
         //  void Place_Order(string name, double price, double quantity)
         case 5:
             string name;
-            double price, quantity;
             cout << "Enter instrument name: ";
             cin >> name;
             cout << "Enter price: ";
