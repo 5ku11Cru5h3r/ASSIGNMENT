@@ -2,7 +2,7 @@ CXX := g++
 CXXFLAGS := -std=c++17  -Iinclude   
 LIBS := -lcurl
 
-SRC := src/main.cpp src/api_client.cpp #src/websocket_client.cpp
+SRC := main.cpp 
 TARGET = bot
 
 all: $(TARGET)
